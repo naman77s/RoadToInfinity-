@@ -59,9 +59,10 @@ function numberAnimation(el, endValue, incrementor, duration) {
 	    man.style.marginLeft = "25px";
 	  };},1000);
 	});
-		if(man.style.marginTop <= "60%"){
+	if(man.style.marginTop < "60%"){
 	    plr.setAttribute('src','Man2.png');
-	}else{
+	}
+	else{
 	    plr.setAttribute('src','Man.png');
 	};
 /* Under construction */
