@@ -49,19 +49,20 @@ function numberAnimation(el, endValue, incrementor, duration) {
 /* Jump function */
 	/* Jump */
 	window.addEventListener("click", function(){
-	    man.style.marginTop = "50%";
-	    man.style.transition = "0.5s";
-	for(var wd = 25; wd < 35; wd++){
-	    man.style.marginLeft = wd + "px";
-	};
+	    man.style.marginTop = "35%";
+	    man.style.transition = "ease-out 1s";
 	/* Return to starting point */
 	setTimeout(function(){
-	  if(man.style.marginTop = "50%"){
+	  if(man.style.marginTop <= "60%"){
 	        man.style.marginTop = "65%";
 	    man.style.marginLeft = "25px";
-	  };},1500);
+	  };},1000);
 	});
 	
+	
+	for(var wd = 25; wd < 35;){
+
+	};
 /* Under construction */
 	/* Game over functions */
         /*"alert("YOUR SCORE : " + count.innerHTML + "\n\n KEEP PLAYING TO BECOME PRO ;p"); */
