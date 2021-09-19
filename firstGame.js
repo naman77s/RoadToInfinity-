@@ -4,6 +4,7 @@ var score = document.getElementById("scores");
 var count = document.getElementById("count");
 var man = document.getElementById("man");
 var cI = document.getElementById("cI");
+var plr = document.getElementById("plr");
 
 /* Starting the game */
 start.addEventListener("click", function(){
@@ -58,7 +59,11 @@ function numberAnimation(el, endValue, incrementor, duration) {
 	    man.style.marginLeft = "25px";
 	  };},1000);
 	});
-	
+		if(man.style.marginTop <= "60%"){
+	    plr.setAttribute('src','Man2.png');
+	}else{
+	    plr.setAttribute('src','Man.png');
+	};
 /* Under construction */
 	/* Game over functions */
         /*"alert("YOUR SCORE : " + count.innerHTML + "\n\n KEEP PLAYING TO BECOME PRO ;p"); */
