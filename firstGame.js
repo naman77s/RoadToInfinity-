@@ -59,10 +59,6 @@ function numberAnimation(el, endValue, incrementor, duration) {
 	  };},1000);
 	});
 	
-	
-	for(var wd = 25; wd < 35;){
-
-	};
 /* Under construction */
 	/* Game over functions */
         /*"alert("YOUR SCORE : " + count.innerHTML + "\n\n KEEP PLAYING TO BECOME PRO ;p"); */
