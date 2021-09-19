@@ -59,16 +59,12 @@ function numberAnimation(el, endValue, incrementor, duration) {
 	    man.style.marginLeft = "25px";
 	  };},1000);
 	});
-	if(man.style.marginTop = "35%"){
+	if(man.style.marginTop == "35%"){
 	    plr.setAttribute('src','Man2.png');
 	};
-	if(man.style.marginTop = "65%"){
+	if(man.style.marginTop == "65%"){
 	    plr.setAttribute('src','Man.png');
 	};
 /* Under construction */
 	/* Game over functions */
         /*"alert("YOUR SCORE : " + count.innerHTML + "\n\n KEEP PLAYING TO BECOME PRO ;p"); */
-/* Under construction */
-if(node.length() < man.length()){
-    node.style.opacity = "0";
-};
