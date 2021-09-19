@@ -52,19 +52,16 @@ function numberAnimation(el, endValue, incrementor, duration) {
 	window.addEventListener("click", function(){
 	    man.style.marginTop = "35%";
 	    man.style.transition = "ease-out 1s";
+            plr.setAttribute('src','Man2.png'); 
 	/* Return to starting point */
 	setTimeout(function(){
 	  if(man.style.marginTop <= "60%"){
 	        man.style.marginTop = "65%";
 	    man.style.marginLeft = "25px";
+            plr.setAttribute('src','Man.png');
 	  };},1000);
 	});
-	if(man.style.marginTop == "35%"){
-	    plr.setAttribute('src','Man2.png');
-	};
-	if(man.style.marginTop == "65%"){
-	    plr.setAttribute('src','Man.png');
-	};
+	
 /* Under construction */
 	/* Game over functions */
         /*"alert("YOUR SCORE : " + count.innerHTML + "\n\n KEEP PLAYING TO BECOME PRO ;p"); */
