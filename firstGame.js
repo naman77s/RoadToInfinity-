@@ -5,7 +5,7 @@ var count = document.getElementById("count");
 var man = document.getElementById("man");
 var cI = document.getElementById("cI");
 var plr = document.getElementById("plr");
-
+var bgMusic = document.getElementById("bm");
 /* Starting the game */
 start.addEventListener("click", function(){
 var obs = document.createElement("marquee");
@@ -45,20 +45,28 @@ function numberAnimation(el, endValue, incrementor, duration) {
     duration: duration ? duration : 4000,
   });
 }};
+    bgMusic.play();
+    console.log("///Game Started");
+    console.log("///Background Music loaded");
+    console.log("///Running all functions");
+    console.log("///Clearing Console");
+    console.clear();
 });
-
 /* Jump function */
 	/* Jump */
 	window.addEventListener("click", function(){
 	    man.style.marginTop = "35%";
 	    man.style.transition = "ease-out 1s";
-            plr.setAttribute('src','Man2.png'); 
+            plr.setAttribute('src','Man2.png');
+        console.log("triggered jump");
+            console.clear();
 	/* Return to starting point */
 	setTimeout(function(){
 	  if(man.style.marginTop <= "60%"){
 	        man.style.marginTop = "65%";
 	    man.style.marginLeft = "25px";
             plr.setAttribute('src','Man.png');
+                console.clear();
 	  };},1000);
 	});
 	
