@@ -21,10 +21,12 @@ for(var i = 0; i < 20; i++){
    obs.appendChild(node);
    
     // Styling marquee and other elements 
-    node.style.color = "blue";
-    node.style.fontSize = "25pt";
-    node.style.textShadow = "-2px 2px 1px black";
-    node.style.marginRight = Math.floor(Math.random()*210) + "px";
+    node.style = `
+      color: blue;
+      font-size: 25pt;
+      text-shadow: -2px 2px 1px black;
+      margin-right: ${Math.floor(Math.random()*210)}px;
+    `
     start.style.opacity = "0";
     score.style.display = "flex";
     cI.style.marginTop = "200%";
@@ -54,17 +56,37 @@ function numberAnimation(el, endValue, incrementor, duration) {
 });
 // Jump function 
 	// Jump 
+  
+	window.addEventListener("load", function(){
+    man.style.marginTop = "30vh";
+    man.style.transition = "ease-out 1s";
+          console.clear();
+// Return to starting point 
+setTimeout(function(){
+  if(man.style.marginTop <= "60vh"){
+        man.style.marginTop = "53vh";
+    man.style.marginLeft = "2vw";
+          plr.setAttribute('src','Man.webp');
+              console.clear();
+  };},1000);
+
+  })
+
+
+
+
+
 	window.addEventListener("click", function(){
-	    man.style.marginTop = "35%";
+	    man.style.marginTop = "30vh";
 	    man.style.transition = "ease-out 1s";
             plr.setAttribute('src','Man2.webp');
         console.log("triggered jump");
             console.clear();
 	// Return to starting point 
 	setTimeout(function(){
-	  if(man.style.marginTop <= "60%"){
-	        man.style.marginTop = "65%";
-	    man.style.marginLeft = "25px";
+	  if(man.style.marginTop <= "60vh"){
+	        man.style.marginTop = "53vh";
+	    man.style.marginLeft = "2vw";
             plr.setAttribute('src','Man.webp');
                 console.clear();
 	  };},1000);

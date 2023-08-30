@@ -1,0 +1,131 @@
+
+*{
+    margin:0;
+    padding:0;
+    transition:0.2s;
+    font-family: poppins;
+}
+body{
+    background-image:url('Sky.webp');
+    background-repeat:no-repeat;
+    background-position:center;
+    object-fit: contain;
+}
+.modal{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    background:rgba(0,0,0,0.5);
+    justify-content:center;
+    align-items:center;
+    z-index:1;
+}
+.modal-content{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width:fit-content;
+    height:fit-content;
+    background:white;
+    border-radius:3rem;
+    padding: 2rem;
+    margin: 20vh auto;
+    box-shadow:2px 2px 1px black,inset -1px -1px 1px black,-1px -1px 1px black,inset 2px 2px 1px black;
+}
+.modal-content p{
+    font-size:1.5rem;
+    font-weight:700;
+    margin:1rem auto;
+}
+.modal-content span {
+    font-size:1.5rem;
+    transform: scale(2.5);
+    font-weight:700;
+    margin:1rem auto;
+    color:darkred;
+}
+.gameName{
+	position:absolute;
+	color:darkred;
+	bottom:0;
+	width:95%;
+	z-index:1;
+	text-align:center;
+	background:white;
+	padding:2.5%;
+	font-size:15pt;
+	font-family:cursive;
+}
+#man{
+    display:block;
+    position:absolute;
+    overflow:hidden;
+    height:100px;
+    width:100px;
+}
+#stage{
+    display:block;
+    position:fixed;
+    height:100vh;
+    width:100%;
+    padding:20px;
+    margin:0;
+    margin-top:65vh;
+    color:white;
+   background-image:url('./grass.png');
+   object-fit: contain;
+   background-repeat: no-repeat;
+   background-size: 1000px;
+}
+#cI{
+    margin: 0;
+}
+#start{
+    position:absolute;
+    margin-top:120px;
+    margin-left:20px;
+    height:50px;
+    width:130px;
+    border:none;
+    outline:none;
+    border-radius:10px;
+    background:darkred;
+    color:white;
+    letter-spacing:2px;
+    font-weight:900;
+    box-shadow:-2px 2px 1px black,inset 1px -1px 1px black;
+}
+#obstacles{
+    display:block;
+    position:absolute;
+    margin-top:60vh;
+   /* animation: move 1s ease-in infinite alternate-reverse;*/
+}
+/*@keyframes move {
+    from{}
+    to{}
+}*/
+#garbage{
+    box-shadow:-2px 2px 1px black,inset 1px -1px 1px black;
+}
+#scores{
+    display:none;
+    position:absolute;
+    text-align:center;
+    justify-content:center;
+    align-items:center;
+    width:150px;
+    height:50px;
+    font-size:25pt;
+    border-radius:10px;
+    font-weight:900;
+    color:white;
+    margin-top:15px;
+    margin-left:30%;
+    margin-right:auto;
+    backdrop-filter:blur(2px);
+    box-shadow:2px 2px 1px black,inset -1px -1px 1px black,-1px -1px 1px black,inset 2px 2px 1px black;
+}
